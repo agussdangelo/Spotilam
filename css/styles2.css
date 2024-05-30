@@ -1,0 +1,309 @@
+/* Estilos generales */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+label {
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos del header y del nav */
+.container {
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    margin-top: 2px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: auto;
+    
+}
+
+.column__container {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 19%;
+    order: -1;
+    padding: 2px;
+    margin-left: 10px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #ffffff;
+    margin-left: auto;
+    height: fit-content;
+    
+}
+
+.header__title {
+    display: flex;
+    margin-right: auto;
+    margin-top: 10px;
+    
+}
+
+.header__title h1 {
+    text-transform: uppercase;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile__info {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.profile__link-session {
+    color: #1DB954;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.profile__link-session:hover {
+    color: #ffffff;
+}
+
+.profile__image {
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: #000000;
+    align-items: center;
+    text-align: center;
+}
+
+.Menu {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Menu li {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid #1DB954;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.Menu li:hover {
+    background-color: #1DB954;
+    color: #000000;
+}
+
+.Menu li:hover a{
+    color: #000000;
+}
+
+.Menu li a {
+    width: 100%;
+    color: #ffffff;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5px;
+} 
+
+.song__section {
+    width: 100%; 
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+} 
+
+.song__article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+} 
+
+.song__image {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #1DB954;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.song__description {
+    font-size: 10px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+}
+
+/* Estilos de las canciones */
+.songs__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 30rem;
+    padding: 10px;
+    margin: auto;
+    overflow-y: auto;
+}
+
+.songs__article {
+    display: flex;
+    width: 33%;
+    padding: 5px;
+    position: relative;
+}
+
+.songs__link {
+    width: 100%;
+}
+
+.songs__image {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid #1DB954;
+    display: block;
+}
+
+/* Porcentajes, responsive, usar em, también con responsive */
+.songs__star {
+    width: 10%;
+    left: 85%;
+    top: 5%;
+    position: absolute;
+    cursor: pointer; 
+}
+
+.songs__star:hover {
+    opacity: 0.8;
+}
+
+/* Estilo del audio */
+.audio__section {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+}
+
+.audio__article {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 99%;
+    background-color: #1DB954;
+    border-radius: 10px;
+    padding: 15px 5px 15px 5px;
+}
+
+.audio {
+    width: 98%;
+}
+
+/* Estilos del footer */
+footer {
+    display: block;
+    width: 100%;
+    height: max-content;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 75px;
+    border: 2px solid #1DB954;
+    border-radius: 3px;
+}
+
+/*Barra de Busqueda */
+.search__section{
+    height: 50px;
+    width: 1090px;
+    position: relative;
+    
+}
+
+.search {
+    height: 50px;
+    width: 1090px;
+    border-radius: 200px;
+    font-size: 20px;
+    background-color: #000000;
+    padding: 0% 50px;
+    border: 1px solid #1DB954;
+    color: #ffffff;
+    caret-color: #1DB954;
+}
+
+
+
+.search__image{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 1%;
+    top: 13%;
+   
+    
+}
+
+
+@media screen and(max-width:800px) {
+    header{
+       background-color: aqua;
+    }
+}

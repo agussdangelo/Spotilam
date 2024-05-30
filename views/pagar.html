@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/pagar.css" />
+        <!-- Fuente -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Premium</title>
+    </head>
+    <body>
+        <header>
+            <div class="profile">
+                <div class="profile__info">
+                    <h3 class="profile__title" id="profile-title">Nombre de usuario</h3>
+                    <a href="../index.html" class="profile__link-session" id="profile-link-session"
+                        >Cerrar sesión</a
+                    >
+                </div>
+                <a class="profile__link" href="profile.html">
+                    <img
+                        src="../img/Avatar.png"
+                        alt="Avatar"
+                        class="profile__image"
+                    />
+                </a>
+            </div>
+        </header>
+        <main class="premium-main">
+            <h1>Elegiste el plan: </h1>
+            <section class="premium-cards-container" id="plan-container">
+                No se escogio ningun plan
+            </section>
+            <div class="form__container">
+                <form class="form" id="premium-form">
+                    <div class="form__group">
+                        <label for="card" class="form__label">Tarjeta</label>
+                        <input
+                            type="text"
+                            placeholder="Tarjeta"
+                            id="card"
+                            class="form__input"
+                        />
+
+                        <label for="vto" class="form__label">VTO</label>
+                        <input type="date" id="vto" class="form__input" />
+                    </div>
+                    <div class="form__group">
+                        <label for="cvc" class="form__label">CVC</label>
+                        <input
+                            type="text"
+                            placeholder="CVC"
+                            id="cvc"
+                            class="form__input"
+                        />
+
+                        <label for="fullname" class="form__label"
+                            >Nombre y apellido</label
+                        >
+                        <input
+                            type="text"
+                            placeholder="Nombre y apellido"
+                            id="fullname"
+                            class="form__input"
+                        />
+                    </div>
+                    <div id="error-container" class="error-message">
+                        <p id="cardError"></p>
+                        <p id="cvcError"></p>
+                    </div>
+                    <div class="form__button-group">
+                        <button type="button" class="form__input-button" onclick="cancelar()">
+                            <a href="premium.html">Cancelar</a>
+                        </button>
+                        <button type="button" class="form__input-button" onclick="validarCampos()">
+                            Pagar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>
+                Octavio Sancho | 39.510.073 - Tobias Rodriguez | 44.513.673 -
+                Angel Leyes| 42.199.664
+            </p>
+            <p>
+                Ezequiel Lage | 38.175.930 - Agustin Dangelo | 44.263.625 - Juan
+                Ignacio Ronquillo | 44.482.636
+            </p>
+        </footer>
+        <script src="../js/getPlanPremium.js"></script>
+        <script src="../js/pagar.js"></script>
+    </body>
+</html>
